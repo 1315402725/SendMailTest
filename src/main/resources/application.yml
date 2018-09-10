@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: SendMailTest
+
+#使用spring自带的service
+#服务器
+mailHost: smtp.163.com
+#邮箱授权码
+mailPwd:
+#端口号
+mailPort: 25
+#邮箱账号
+mailUser: sunyubei12@163.com
+#时间延迟
+mailTimeout: 25000
+#发送人
+mailFrom: 3044374769@qq.com
+#发送人姓名
+mailUserName : 孙玉贝
+
+
+
+##springBoot的配置
+spring.mail.host: smtp.163.com
+spring.mail.username: sunyubei12@163.com
+spring.mail.password:
+#协议
+spring.mail.protocol: smtp
+#端口
+spring.mail.port: 25
+spring.mail.properties.mail.smtp.auth: true
+spring.mail.properties.mail.smtp.starttls.enable: true
+spring.mail.properties.mail.smtp.starttls.required: true
+spring.mail.default-encoding: UTF-8
